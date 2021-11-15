@@ -4,27 +4,27 @@ const slika1 = {
     location: "Switzerland"
 }
 const slika2 = {
-    src: "images/jay-mantri-TFyi0QOx08c-unsplash.jpg",
+    src: "images/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg",
     header: "Lonely road",
-    location: "Švicarska"
+    location: "Denmark"
 }
 const slika3 = {
     src: "images/jay-mantri-TFyi0QOx08c-unsplash.jpg",
-    header: "Maglovita šuma",
-    location: "Švicarska"
+    header: "Morning spring forest",
+    location: "Switzerland"
 }
 const slika4 = {
-    src: "images/jay-mantri-TFyi0QOx08c-unsplash.jpg",
-    header: "Maglovita šuma",
-    location: "Švicarska"
+    src: "images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg",
+    header: "South forest",
+    location: "Brasil"
 }
 const slika5 = {
-    src: "images/jay-mantri-TFyi0QOx08c-unsplash.jpg",
-    header: "Maglovita šuma",
-    location: "Švicarska"
+    src: "images/sergei-a--heLWtuAN3c-unsplash.jpg",
+    header: "Mountain forest",
+    location: "Canada"
 }
 const slika6 = {
-    src: "images/jay-mantri-TFyi0QOx08c-unsplash.jpg",
-    header: "Maglovita šuma",
-    location: "Švicarska"
+    src: "images/veeterzy-sMQiL_2v4vs-unsplash.jpg",
+    header: "The tree of life",
+    location: "Ganna"
 }
