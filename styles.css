@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
-    transition: all 0.1s ease-out;
+    transition: all 100ms ease-out;
 }
 body{
     background-color: #082032;
@@ -17,7 +17,6 @@ main{
 
     display: flex;
     flex-direction: column;
-
 }
 section{
     width: 100%;
@@ -59,6 +58,36 @@ h2{
 }
 .fas{
     padding-right: 5px;
+}
+.showMoreLess{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    margin-top: -35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrowBg{
+    transform: scale(0.75);
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 50%;
+}
+.arrowBg:hover{
+    transform: scale();
+    cursor: pointer;
+}
+.arrow{
+    width: 24px; height: 24px;
+    margin: auto;
 }
 #mainSlika{
     position: relative;
