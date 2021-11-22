@@ -40,9 +40,12 @@ const content_2 = document.getElementById("content-2")
 const grid_section = document.getElementsByClassName("grid-section")[0]
 const arrow = document.getElementsByClassName("arrow")[0]
 const showMoreLess = document.getElementsByClassName("showMoreLess")[0]
+const container = document.getElementsByClassName("container")[0]
+const grid_image = document.getElementsByClassName("grid-image")
 
 window.addEventListener("load", () => {
     document.getElementsByTagName("body")[0].style.overflowY = "hidden"
+    grid_image[0].style.transform = "scale(0.85)"
     mainSlika.src = slika1.src;
     h2.innerHTML = slika1.header;
     location1.innerHTML = slika1.location;
@@ -52,6 +55,7 @@ var n = 0;
 arrowBg.addEventListener("click", () => {
     if(n === 0) {
         content_1.style.height = "100%"
+        container.style.width = "100%"
         grid_section.style.display = "none"
         showMoreLess.style.marginTop = "-75px"
         arrowBg.style.transform = "rotate(180deg) scale(0.75)"
@@ -59,6 +63,7 @@ arrowBg.addEventListener("click", () => {
         console.log(n)
     } else{
         content_1.style.height = "80%"
+        container.style.width = "75%"
         grid_section.style.display = "flex"
         showMoreLess.style.marginTop = "-35px"
         arrowBg.style.transform = "rotate(0deg) scale(0.75)"
@@ -71,34 +76,77 @@ grid_item[0].addEventListener("click", () => {
     mainSlika.src = slika1.src;
     h2.innerHTML = slika1.header;
     location1.innerHTML = slika1.location;
+
+    grid_image[0].style.transform = "scale(0.85)"
+    grid_image[1].style.transform = "scale(1)"
+    grid_image[2].style.transform = "scale(1)"
+    grid_image[3].style.transform = "scale(1)"
+    grid_image[4].style.transform = "scale(1)"
+    grid_image[5].style.transform = "scale(1)"
+    
 })
 
 grid_item[1].addEventListener("click", () => {
     mainSlika.src = slika2.src;
     h2.innerHTML = slika2.header;
     location1.innerHTML = slika2.location;
+
+    grid_image[1].style.transform = "scale(0.85)"
+    grid_image[0].style.transform = "scale(1)"
+    grid_image[2].style.transform = "scale(1)"
+    grid_image[3].style.transform = "scale(1)"
+    grid_image[4].style.transform = "scale(1)"
+    grid_image[5].style.transform = "scale(1)"
 })
 
 grid_item[2].addEventListener("click", () => {
     mainSlika.src = slika3.src;
     h2.innerHTML = slika3.header;
     location1.innerHTML = slika3.location;
+
+    grid_image[2].style.transform = "scale(0.85)"
+    grid_image[1].style.transform = "scale(1)"
+    grid_image[0].style.transform = "scale(1)"
+    grid_image[3].style.transform = "scale(1)"
+    grid_image[4].style.transform = "scale(1)"
+    grid_image[5].style.transform = "scale(1)"
 })
 
 grid_item[3].addEventListener("click", () => {
     mainSlika.src = slika4.src;
     h2.innerHTML = slika4.header;
     location1.innerHTML = slika4.location;
+
+    grid_image[3].style.transform = "scale(0.85)"
+    grid_image[1].style.transform = "scale(1)"
+    grid_image[2].style.transform = "scale(1)"
+    grid_image[0].style.transform = "scale(1)"
+    grid_image[4].style.transform = "scale(1)"
+    grid_image[5].style.transform = "scale(1)"
 })
 
 grid_item[4].addEventListener("click", () => {
     mainSlika.src = slika5.src;
     h2.innerHTML = slika5.header;
     location1.innerHTML = slika5.location;
+
+    grid_image[4].style.transform = "scale(0.85)"
+    grid_image[1].style.transform = "scale(1)"
+    grid_image[2].style.transform = "scale(1)"
+    grid_image[3].style.transform = "scale(1)"
+    grid_image[0].style.transform = "scale(1)"
+    grid_image[5].style.transform = "scale(1)"
 })
 
 grid_item[5].addEventListener("click", () => {
     mainSlika.src = slika6.src;
     h2.innerHTML = slika6.header;
     location1.innerHTML = slika6.location;
+
+    grid_image[5].style.transform = "scale(0.85)"
+    grid_image[1].style.transform = "scale(1)"
+    grid_image[2].style.transform = "scale(1)"
+    grid_image[3].style.transform = "scale(1)"
+    grid_image[4].style.transform = "scale(1)"
+    grid_image[0].style.transform = "scale(1)"
 })

@@ -5,14 +5,30 @@
     font-family: 'Quicksand', sans-serif;
     transition: all 100ms ease-out;
 }
-@keyframes BottomToTop {
-    0% {
-      margin-bottom: -23%;
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4
+    } 
+  to {
+    opacity: 1
     }
-    100% {
-      margin-bottom: 0%;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4
+    } 
+  to {
+    opacity: 1
     }
-  }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
 body{
     background-color: #082032;
     color: white;
@@ -31,6 +47,10 @@ section{
 }
 #content-1{
     height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #content-2{
     /*#3a3a3a*/
@@ -38,7 +58,8 @@ section{
     height: 20%;
 }
 .container{
-    width: 100%;
+    padding: 10px 0px;
+    width: 75%;
     height: 100%;
 
     display: flex;
@@ -129,5 +150,4 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 1px solid white;
 }
