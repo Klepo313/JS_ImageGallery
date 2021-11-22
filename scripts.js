@@ -59,6 +59,8 @@ arrowBg.addEventListener("click", () => {
         grid_section.style.display = "none"
         showMoreLess.style.marginTop = "-75px"
         arrowBg.style.transform = "rotate(180deg) scale(0.75)"
+        content_2.style.outline = "none"
+        container.style.padding = "0px"
         n = 1;
         console.log(n)
     } else{
@@ -67,6 +69,7 @@ arrowBg.addEventListener("click", () => {
         grid_section.style.display = "flex"
         showMoreLess.style.marginTop = "-35px"
         arrowBg.style.transform = "rotate(0deg) scale(0.75)"
+        content_2.style.outline = "6px solid white"
         n = 0;
         console.log(n)
     }
