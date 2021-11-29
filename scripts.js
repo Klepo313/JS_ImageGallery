@@ -39,12 +39,41 @@ const content_1 = document.getElementById("content-1");
 const content_2 = document.getElementById("content-2");
 
 const grid_section = document.getElementsByClassName("grid-section")[0];
-const grid_item = document.createElement("div")
-const grid_image = document.createElement("img")
-grid_item.classList.add("grid-item");
-grid_image.classList.add("grid-image");
 
-for(i=0; i<5; i++){
+function createGridItem() {
+  const grid_item = document.createElement("div")
+  grid_item.classList.add("grid-item");
+}
+
+function createGridImage() {
+  const grid_image = document.createElement("img")
+  grid_image.classList.add("grid-image");
+}
+
+const grid__items = [
+  createGridItem(),
+  createGridItem(),
+  createGridItem(),
+  createGridItem(),
+  createGridItem(),
+  createGridItem()
+];
+const grid__images = [
+  createGridImage(),
+  createGridImage(),
+  createGridImage(),
+  createGridImage(),
+  createGridImage(),
+  createGridImage()
+];
+
+for(var i = 0; i < 6; i++) {
+  grid_section.appendChild(grid__items[i])
+  grid__items[i].appendChild(grid__images[i])
+}
+
+/*
+for(i=0; i<6; i++){
   grid_section.appendChild(grid_item);
   grid_item.appendChild(grid_image)
   if(i===0){
@@ -66,6 +95,7 @@ for(i=0; i<5; i++){
     grid_image.src = slika6.src;
   }
 }
+*/
 
 const arrow = document.getElementsByClassName("arrow")[0];
 const showMoreLess = document.getElementsByClassName("showMoreLess")[0];
