@@ -40,75 +40,53 @@ const content_2 = document.getElementById("content-2");
 
 const grid_section = document.getElementsByClassName("grid-section")[0];
 
-function createGridItem() {
-  const grid_item = document.createElement("div")
-  grid_item.classList.add("grid-item");
-}
-
-function createGridImage() {
-  const grid_image = document.createElement("img")
-  grid_image.classList.add("grid-image");
-}
-
-const grid__items = [
-  createGridItem(),
-  createGridItem(),
-  createGridItem(),
-  createGridItem(),
-  createGridItem(),
-  createGridItem()
-];
-const grid__images = [
-  createGridImage(),
-  createGridImage(),
-  createGridImage(),
-  createGridImage(),
-  createGridImage(),
-  createGridImage()
-];
-
-for(var i = 0; i < 6; i++) {
-  grid_section.appendChild(grid__items[i])
-  grid__items[i].appendChild(grid__images[i])
-}
-
-/*
-for(i=0; i<6; i++){
-  grid_section.appendChild(grid_item);
-  grid_item.appendChild(grid_image)
-  if(i===0){
-    grid_image.src = slika1.src;
-  }
-  if(i===1){
-    grid_image.src = slika2.src;
-  }
-  if(i===2){
-    grid_image.src = slika3.src;
-  }
-  if(i===3){
-    grid_image.src = slika4.src;
-  }
-  if(i===4){
-    grid_image.src = slika5.src;
-  }
-  if(i===5){
-    grid_image.src = slika6.src;
-  }
-}
-*/
 
 const arrow = document.getElementsByClassName("arrow")[0];
 const showMoreLess = document.getElementsByClassName("showMoreLess")[0];
 const container = document.getElementsByClassName("container")[0];
 //const grid_image = document.getElementsByClassName("grid-image");
+  
+const grid_image = []
+const grid_item = []
 
-window.addEventListener("load", () => {
-  document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-  grid_image[0].style.transform = "scale(0.85)";
-  mainSlika.src = slika1.src;
-  h2.innerHTML = slika1.header;
-  location1.innerHTML = slika1.location;
-});
+for(let i = 0; i < 6; i++){
+  const grid_items = document.createElement("div")
+  const grid_images = document.createElement("img")
+
+  if(i===0){
+    grid_images.src = slika1.src
+  }
+  if(i===1){
+    grid_images.src = slika2.src
+  }
+  if(i===2){
+    grid_images.src = slika3.src
+  }
+  if(i===3){
+    grid_images.src = slika4.src
+  }
+  if(i===4){
+    grid_images.src = slika5.src
+  }
+  if(i===5){
+    grid_images.src = slika6.src
+  }
+
+  grid_items.classList.add("grid-item")
+  grid_images.classList.add("grid-image")
+
+  grid_section.appendChild(grid_items)
+  grid_items.appendChild(grid_images)
+
+  grid_item.push(grid_items)
+  grid_image.push(grid_images)
+}
+
+document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+mainSlika.src = slika1.src;
+h2.innerHTML = slika1.header;
+location1.innerHTML = slika1.location;
+grid_image[0].style.transform = "scale(0.85)";
 
 
 var n = 0;
